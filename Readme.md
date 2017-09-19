@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Khadis Asfyandiyarov](https://up.htmlacademy.ru/adaptive/12/user/112475).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://up.htmlacademy.ru/htmlcss/18/user/41580).
 
 ---
 
