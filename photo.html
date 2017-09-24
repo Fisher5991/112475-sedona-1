@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фото Седоны</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__open-menu" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="page-main">
+      <h1 class="page-main__title">Фото и видео</h1>
+      <p class="page-main__description">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+      <section class="page-main__photo photo">
+        <h2 class="visually-hidden">Список фото</h2>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <h3 class="photo__title">Неродные просторы</h3>
+            <a href="#">
+              <img src="img/not-native-vastnesses.jpg" width="138" height="70" alt="Неродные просторы">
+            </a>
+            <p class="photo__author">Автор фото: <span>Борис</span></p>
+            <p class="photo__like">1350</p>
+          </li>
+          <li class="photo__item">
+            <h3 class="photo__title">Местная растительность</h3>
+            <a href="#">
+              <img src="img/native-vegetation.jpg" width="138" height="70" alt="Местная растительность">
+            </a>
+            <p class="photo__author">Автор фото: <span>Сергей</span></p>
+            <p class="photo__like">143</p>
+          </li>
+          <li class="photo__item">
+            <h3 class="photo__title">Дорога на север</h3>
+            <a href="#">
+              <img src="img/road-north.jpg" width="138" height="70" alt="Дорога на север">
+            </a>
+            <p class="photo__author">Автор фото: <span>Петр</span></p>
+            <p class="photo__like">96</p>
+          </li>
+          <li class="photo__item">
+            <h3 class="photo__title">Мост Дьявола</h3>
+            <a href="#">
+              <img src="img/devils-bridge.jpg" width="138" height="70" alt="Мост Дьявола">
+            </a>
+            <p class="photo__author">Автор фото: <span>Антон</span></p>
+            <p class="photo__like">254</p>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__video video">
+        <h2 class="visually-hidden">Видеопрезентация</h2>
+        <b>Все еще сомневаетесь?</b>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video__item">
+          <video width="400" height="300" controls="controls" poster="img/sedona-presentation.jpg">
+            <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+            <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+          </video>
+        </p>
+      </section>
+    </main>
+    
+    <footer class="page-footer">
+      <p class="page-footer__tag">#visitsedona</p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__copyright copyright">
+        <span>Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Интенсив &laquo;Продвинутый HTML и CSS&raquo;</span>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
