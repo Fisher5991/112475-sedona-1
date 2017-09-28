@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Форма отзыва</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
         <button class="main-nav__open-menu" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Форма отзыва</a>
+              <a class="site-list__link">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -31,6 +32,9 @@
     </header>
 
     <main class="page-main">
+      <div class="page-main__background page-main__background--mini">
+        <div class="page-main__decoration"></div>
+      </div>
       <h1 class="page-main__title">Оставьте свой отзыв</h1>
       <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <section class="feedback">
@@ -39,26 +43,26 @@
           <fieldset class="feedback__element">
             <legend class="feedback__name">Представьтесь:</legend>
             <p class="feedback__field">
-              <label for="first-name">Имя<sup>*</sup>:</label>
+              <label for="first-name">Имя<sup>*</sup>: </label>
               <input class="field" type="text" id="first-name" name="first-name" placeholder="Петр">
             </p>
             <p class="feedback__field">
-              <label for="surname">Фамилия<sup>*</sup>:</label>
+              <label for="surname">Фамилия<sup>*</sup>: </label>
               <input class="field" type="text" id="surname" name="surname" placeholder="Иванов">
             </p>
             <p class="feedback__field">
-              <label for="patronymic">Отчество:</label>
+              <label for="patronymic">Отчество: </label>
               <input class="field" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
           <fieldset class="feedback__element">
             <legend class="feedback__name">Контактная информация:</legend>
             <p class="feedback__field">
-              <label for="phone-number">Контактный телефон<sup>*</sup>:</label>
+              <label for="phone-number">Контактный телефон<sup>*</sup>: </label>
               <input class="field field--tel" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон">
             </p>
             <p class="feedback__field">
-              <label for="e-mail">Электронная почта<sup>*</sup>:</label>
+              <label for="e-mail">Электронная почта<sup>*</sup>: </label>
               <input class="field field--email" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
             </p>
           </fieldset>
@@ -154,5 +158,17 @@
         </a>
       </p>
     </footer>
+
+    <section class="modal modal__notification">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button modal__button--unsuccess button" type="button">ОК</button>
+    </section>
+
+    <section class="modal modal__notification">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+    </section>
   </body>
 </html>
