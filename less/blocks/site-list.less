@@ -1,10 +1,12 @@
 .site-list {
   margin: 0;
   padding: 0;
+  background-color: #81b3d2;
   list-style: none;
 }
 
 .site-list__item {
+  font-weight: bold;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
@@ -12,4 +14,20 @@
 
 .site-list__link {
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    background-color: #ffffff;
+  }
+
+  .site-list__item {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  
+  .site-list__link {
+    color: #000000;
+  }
 }

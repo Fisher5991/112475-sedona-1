@@ -1,5 +1,25 @@
+.modal {
+  width: 320px;
+  background-color: #ffffff;
+}
+
 .modal__title {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .modal {
+    &--success {
+      width: 640px;
+      background-color: #ffffff;
+    }
+    
+    &--unsuccess {
+      width: 400px;
+      background-color: #ffffff;
+    }
+  }
+}
+

@@ -7,27 +7,27 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__open-menu" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -35,13 +35,15 @@
       <div class="page-main__background page-main__background--mini">
         <div class="page-main__decoration"></div>
       </div>
-      <h1 class="page-main__title">Оставьте свой отзыв</h1>
-      <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Оставьте свой отзыв</h1>
+        <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
       <section class="feedback">
         <h2 class="visually-hiddden">Форма отзыва</h2>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback__element">
-            <legend class="feedback__name">Представьтесь:</legend>
+          <fieldset class="feedback__element feedback__element--introducing">
+            <legend class="feedback__name feedback__name--alignment">Представьтесь:</legend>
             <p class="feedback__field">
               <label for="first-name">Имя<sup>*</sup>: </label>
               <input class="field" type="text" id="first-name" name="first-name" placeholder="Петр">
@@ -66,8 +68,8 @@
               <input class="field field--email" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
             </p>
           </fieldset>
-          <fieldset class="feedback__element">
-            <legend class="feedback__name">Ваше общее впечатление</legend>
+          <fieldset class="feedback__element feedback__element--effect">
+            <legend class="feedback__name feedback__name--alignment">Ваше общее впечатление</legend>
             <ul class="feedback__options">
               <li class="feedback__item">
                 <label for="positive">
@@ -89,7 +91,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__element">
+          <fieldset class="feedback__element feedback__element--alignment">
             <legend class="feedback__name">Посещенные достопримечательности:</legend>
             <ul class="feedback__options">
               <li class="feedback__item">
@@ -126,6 +128,7 @@
             </p>
           </fieldset>
           <button class="feedback__button button" type="submit">Отправить отзыв</button>
+          <p class="feedback__extra"><sub>*</sub> &mdash; обязательные поля</p>
         </form>
       </section>
     </main>
@@ -160,15 +163,19 @@
     </footer>
 
     <section class="feedback__modal modal">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button modal__button--unsuccess button" type="button">ОК</button>
+      <div class="modal--unsuccess">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--unsuccess button" type="button">ОК</button>
+      </div>
     </section>
 
     <section class="feedback__modal modal">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      <div class="modal--success">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      </div>
     </section>
   </body>
 </html>
