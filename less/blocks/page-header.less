@@ -1,0 +1,32 @@
+.page-header {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
+  height: 56px;
+  order: 2;
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: block;
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    margin: 0 auto;
+    width: @desktop-width;
+  }
+}
