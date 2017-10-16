@@ -1,23 +1,39 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
-  src: url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
   font-weight: normal;
+  font-family: "PT Sans";
   font-style: normal;
+  src: url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
+  font-family: "PT Sans";
   font-style: normal;
+  src: url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
 }
 
 a {
   text-decoration: none;
 }
 
-/*img {
+/*
+  img {
   max-width: 100%;
   height: auto;
-  Не нахожу полезным
-}*/
+}
+*/
+
+ .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;  
+}
