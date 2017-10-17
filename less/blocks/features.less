@@ -12,6 +12,7 @@
   padding-left: 36px;
   line-height: 21px;
   text-align: center;
+  box-sizing: border-box;
 
   &--picture {
     display: flex;
@@ -22,6 +23,7 @@
     padding-left: 20px;
     color: #ffffff;
     background-color: #81b3d2;
+    box-sizing: border-box;
   }
 
   &--sub {
@@ -116,6 +118,7 @@
 
   .features__item {
     width: 256px;
+    padding-top: 47px;
     padding-right: 49px;
     padding-left: 49px;
     box-sizing: border-box;
@@ -146,7 +149,12 @@
 
   .features__description {
     padding-top: 21px;
+    padding-bottom: 43px;
     border: 0;
+
+    &--picture {
+      padding-bottom: 0;
+    }
   }
 
   .features__description br {
@@ -206,6 +214,16 @@
     width: 800px;
   }
 
+  .features__title {
+    margin-right: 75px;
+    margin-left: 75px;
+
+    &--picture {
+      margin-right: 55px;
+      margin-left: 55px;
+    }
+  }
+
   .features__text {
     width: 400px;
     padding-top: 50px;
@@ -216,6 +234,12 @@
   }
 
   .features__description {
+    padding-bottom: 66px;
+
+    &--picture {
+      padding-bottom: 0;
+    }
+
     &--picture br {
       display: inline;
     }
