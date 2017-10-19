@@ -8,7 +8,6 @@
 
 .page-header__logo {
   position: absolute;
-  bottom: -27px;
   left: 50%;
   z-index: 2;
   transform: translate(-50%);
@@ -20,10 +19,20 @@
   height: 83px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-header__logo {
+    bottom: -27px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: block;
     width: @tablet-width;
+  }
+
+  .page-header__logo {
+    top: 0;
   }
 }
 

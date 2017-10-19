@@ -53,23 +53,23 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; /*временно*/
     width: @tablet-width;
     background-color: #ffffff;
   }
 
   .site-list__item {
-    margin-left: auto;
-    margin-right: auto;
+    width: 153px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 14px;
     line-height: 26px;
     border: none;
 
-    &:first-child {
-      padding-top: 15px;
+    &:nth-child(2),
+    &:nth-child(6) {
+      margin-right: 156px;
     }
   }
 
@@ -101,6 +101,21 @@
     &:active {
       color: #766357;
       opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: @desktop-width;
+  }
+
+  .site-list__item {
+    width: 240px;
+
+    &:nth-child(2),
+    &:nth-child(6) {
+      margin-right: 240px;
     }
   }
 }

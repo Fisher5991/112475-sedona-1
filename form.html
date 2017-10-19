@@ -45,7 +45,7 @@
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback__wrapper">
             <fieldset class="feedback__element feedback__element--introducing">
-              <legend class="feedback__name feedback__name--alignment">Представьтесь:</legend>
+              <legend class="feedback__name feedback__name--alignment"><span class="feedback__name-element feedback__name-element--alignment">Представьтесь:</span></legend>
               <p class="feedback__field">
                 <label class="feedback__label" for="first-name">Имя<sup>*</sup>: </label>
                 <input class="field" type="text" id="first-name" name="first-name" placeholder="Петр">
@@ -62,7 +62,7 @@
           </div>
           <div class="feedback__wrapper feedback__wrapper--contacts">
             <fieldset class="feedback__element">
-              <legend class="feedback__name feedback__name--contacts">Контактная информация:</legend>
+              <legend class="feedback__name feedback__name--contacts"><span class="feedback__name-element">Контактная информация:</span></legend>
               <div class="feedback__container">
                 <p class="feedback__field feedback__field--contacts">
                   <label class="feedback__label feedback__label--contacts" for="phone-number"><span>Контактный </span>телефон<sup>*</sup>: </label>
@@ -77,7 +77,7 @@
           </div>
           <div class="feedback__wrapper feedback__wrapper--impression">
             <fieldset class="feedback__element feedback__element--impression">
-              <legend class="feedback__name feedback__name--impression feedback__name--alignment">Ваше общее впечатление</legend>
+              <legend class="feedback__name feedback__name--impression feedback__name--alignment"><span class="feedback__name-element feedback__name-element--alignment">Ваше общее впечатление:</span></legend>
               <ul class="feedback__options">
                 <li class="feedback__item">
                   <label class="feedback__option-label" for="positive">
@@ -105,16 +105,16 @@
           </div>
           <div class="feedback__wrapper feedback__wrapper--lions">
             <fieldset class="feedback__element feedback__element--alignment">
-              <legend class="feedback__name feedback__name--lions">Посещенные достопримечательности:</legend>
+              <legend class="feedback__name feedback__name--lions"><span class="feedback__name-element">Посещенные достопримечательности:</span></legend>
               <ul class="feedback__options feedback__options--lions">
                 <li class="feedback__item feedback__item--lions">
                   <label class="feedback__option-label" for="devils-bridge">
                     <input class="visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
                     <span class="feedback__checkbox"></span>
-                    <span>Мост Дьявола</span>
+                    Мост Дьявола
                   </label>
                 </li>
-                <li class="feedback__item feedback__item--lions">
+                <li class="feedback__item feedback__item--lions feedback__item--slide-park">
                   <label class="feedback__option-label" for="slide-park">
                     <input class="visually-hidden" type="checkbox" id="slide-park" name="slide-park" checked>
                     <span class="feedback__checkbox"></span>
@@ -128,7 +128,7 @@
                     Гора-Колокол
                   </label>
                 </li>
-                <li class="feedback__item feedback__item--lions">
+                <li class="feedback__item feedback__item--lions feedback__item--red-rocks">
                   <label class="feedback__option-label" for="red-rocks">
                     <input class="visually-hidden" type="checkbox" id="red-rocks" name="red-rocks" checked>
                     <span class="feedback__checkbox"></span>
@@ -140,16 +140,16 @@
           </div>
           <div class="feedback__wrapper feedback__wrapper--emotions">
             <fieldset class="feedback__element">
-              <legend class="feedback__name feedback__name--emotions">Опишите свои эмоции:</legend>
-              <p class="feedback__field">
+              <legend class="feedback__name feedback__name--emotions"><span class="feedback__name-element">Опишите свои эмоции:</span></legend>
+              <p class="feedback__field feedback__field--emotions">
                 <label class="visually-hidden" for="emotions">Мои впечатления</label>
-                <textarea class="field" id="emotions" name="emotions" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="field field--textarea" id="emotions" name="emotions" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               </p>
             </fieldset>
           </div>
           <div class="feedback__send">
             <button class="feedback__button button" type="submit">Отправить отзыв</button>
-            <p class="feedback__legend"><sup>*</sup> &mdash; обязательные поля</p>
+            <p class="feedback__legend"><sup>*</sup> &ndash; обязательные поля</p>
           </div>
         </form>
       </section>
@@ -186,7 +186,7 @@
         </ul>
       </div>
       <p class="page-footer__copyright copyright">
-        <span>Разработано</span>
+        <span class="copyright__title">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Интенсив &laquo;Продвинутый HTML и CSS&raquo;</span>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
