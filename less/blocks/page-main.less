@@ -18,19 +18,54 @@
 }
 
 .page-main__wrapper {
-  padding: 0 20px;
+  padding-top: 40px;
+  padding-right: 24px;
+  padding-bottom: 42px;
+  padding-left: 24px;
   box-sizing: border-box;
+
+  &--photo {
+    padding-top: 38px;
+    padding-bottom: 27px;
+  }
+
+  &--form {
+    padding-top: 38px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+  }
 }
 
 .page-main__title {
+  margin-top: 0;
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   color: #000000;
+
+  &--photo,
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
 .page-main__description {
+  margin: 0;
   text-align: center;
+
+  &--home {
+    line-height: 26px;
+  }
+}
+
+.page-main__photo {
+  border-top: 1px solid #e5e5e5;
+}
+
+.page-main__video {
+  padding-bottom: 115px;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,21 +84,52 @@
   }
 
   .page-main__wrapper {
-    padding: 0 60px;
+    padding-top: 50px;
+    padding-right: 141px;
+    padding-bottom: 50px;
+    padding-left: 141px;
+
+    &--photo {
+      padding-top: 69px;
+      padding-right: 170px;
+      padding-bottom: 69px;
+      padding-left: 170px;
+    }
+
+    &--form {
+      padding-top: 69px;
+      padding-right: 163px;
+      padding-bottom: 56px;
+      padding-left: 163px;
+    }
+  }
+
+  .page-main__title {
+    margin-bottom: 28px;
+    font-size: 21px;
+
+    &--photo,
+    &--form {
+      margin-bottom: 26px;
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 
   .page-main__photo {
     padding: 0 60px;
+    border: 0;
   }
 
   .page-main__video {
-    padding: 0 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    padding-left: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
-    margin: 0 auto;
     width: @desktop-width;
   }
 
@@ -74,7 +140,30 @@
   }
 
   .page-main__wrapper {
-    padding: 0;
+    padding-right: 357px;
+    padding-left: 357px;
+
+    &--photo {
+      padding-top: 106px;
+      padding-right: 386px;
+      padding-bottom: 71px;
+      padding-left: 386px;
+    }
+
+    &--form {
+      padding-top: 106px;
+      padding-right: 377px;
+      padding-bottom: 41px;
+      padding-left: 377px;
+    }
+  }
+
+  .page-main__title {
+    margin-top: 0;
+
+    &--photo {
+      margin-bottom: 26px;
+    }
   }
 
   .page-main__photo {
@@ -82,6 +171,8 @@
   }
 
   .page-main__video {
-    padding: 0;
+    padding-right: 200px;
+    padding-bottom: 82px;
+    padding-left: 200px;
   }
 }

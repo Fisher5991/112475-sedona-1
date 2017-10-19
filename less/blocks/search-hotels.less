@@ -1,4 +1,12 @@
 .search-hotels {
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.search-hotels__text {
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -8,26 +16,76 @@
   color: #000000;
 }
 
-.search-hotels__text {
-  padding: 0 20px;
+.search-hotels__info {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.search-hotels__info br {
+  display: none;
+}
+
+.search-hotels__button {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 49px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .search-hotels__map-wrapper {
   padding: 0;
   min-height: 350px;
-  line-height: 0; /* убирает нижний отступ */
   background-color: lightgreen;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
+  .search-hotels {
+    padding-bottom: 0;
+  }
+
+  .search-hotels__text {
+    padding-top: 50px;
+    padding-right: 155px;
+    padding-left: 155px;
+  }
+
+  .search-hotels__slogan {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .search-hotels__info {
+    margin-top: 26px;
+  }
+
+  .search-hotels__info br {
+    display: inline;
+  }
+
+  .search-hotels__button {
+    margin-top: 42px;
+    margin-bottom: 58px;
+  }
+
   .search-hotels__map-image {
     width: 768px; /* временно */
   }
 }
 
 @media (min-width: @desktop-width) {
+  .search-hotels__text {
+    padding-right: 371px;
+    padding-left: 371px;
+  }
+
+  .search-hotels__button {
+    margin-top: 47px;
+    margin-bottom: 66px;
+  }
+
   .search-hotels__map-image {
     width: 1200px; /* временно */
   }
