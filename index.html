@@ -9,7 +9,10 @@
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <div class="main-nav__container">
@@ -34,10 +37,10 @@
 
     <main class="page-main">
       <div class="page-main__background">
-        <div class="page-main__decoration"></div>
+        <img class="page-main__text" src="img/text-sedona-index.svg" width="460" height="350" alt="Sedona">
       </div>
       <div class="page-main__wrapper">
-        <h1 class="page-main__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="page-main__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="page-main__description page-main__description--home">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
       </div>
       <section class="page-main__features features">
@@ -45,7 +48,13 @@
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="features__list">
             <li class="features__item features__item--picture">
-              <img class="features__image features__image--order" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+              <p class="features__image-wrapper features__image-wrapper--order">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="features__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+                </picture>
+              </p>
               <div class="features__text">
                 <h3 class="features__title features__title--picture">Настоящий городок</h3>
                 <span>&ndash; №1 &ndash;</span>
@@ -69,7 +78,13 @@
               </ul>
             </li>
             <li class="features__item features__item--picture">
-              <img class="features__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+              <p class="features__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="features__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
+              </p>
               <div class="features__text">
                 <h3 class="features__title features__title--picture">Там есть мост Дьявола</h3>
                 <span>&ndash; №2 &ndash;</span>
@@ -145,5 +160,7 @@
         </a>
       </p>
     </footer>
+
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

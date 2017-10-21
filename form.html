@@ -9,7 +9,10 @@
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <div class="main-nav__container">
@@ -34,7 +37,7 @@
 
     <main class="page-main">
       <div class="page-main__background page-main__background--mini">
-        <div class="page-main__decoration"></div>
+        <img class="page-main__text" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
       </div>
       <div class="page-main__wrapper page-main__wrapper--form">
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
@@ -215,5 +218,7 @@
         </div>
       </div>
     </section>
+
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
