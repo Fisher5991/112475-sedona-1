@@ -15,12 +15,13 @@
 
   &--mini {
     min-height: 158px;
-    background-position: 0 100%, center 100%;
+    background-position: 0 100%, -225px -230px;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: auto, cover;
+    background-position: 0 100%, center 100%;
+    background-size: auto, 768px 389px;
   }
 }
 
@@ -94,11 +95,13 @@
 
     &--mini {
       min-height: 290px;
+      background-position: 0 100%, 0 100%;
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
       background-size: auto, cover;
+      background-position: 0 100%, 0 100%;
     }
   }
 
