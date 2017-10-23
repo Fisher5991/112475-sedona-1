@@ -14,8 +14,6 @@
 
 .photo__image {
   display: block;
-  width: 280px;
-  height: 280px;
 }
 
 .photo__text {
@@ -35,10 +33,33 @@
 }
 
 .photo__like {
+  position: relative;
   margin: 0;
   padding-left: 37px;
   font-weight: bold;
   color: #000000;
+}
+
+.photo__like-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #b2b2b2;
+}
+
+.photo__like-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover .photo__like-icon,
+  &:focus .photo__like-icon {
+    fill: #81b3d2;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -120,5 +141,9 @@
 
   .photo__like {
     color: #ffffff;
+  }
+
+  .photo__like-icon {
+    fill: #ffffff;
   }
 }

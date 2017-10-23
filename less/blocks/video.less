@@ -50,6 +50,72 @@
   width: 100%;
 }
 
+.video__service-button {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--replay {
+    bottom: -24px;
+    left: 45px;
+  }
+
+  &--subtitles {
+    bottom: -25px;
+    right: 114px;
+  }
+
+  &--fullscreen {
+    bottom: -25px;
+    right: 51px;
+  }
+
+  &:hover .video__service-icon,
+  &:focus .video__service-icon {
+    fill: #333333;
+  }
+
+  &:active .video__service-icon {
+    fill: #c1c1c1;
+  }
+}
+
+.video__service-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #5c6870;
+  z-index: 1;
+}
+
+.video__scale {
+  position: absolute;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 42px;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .video__text {
     padding-top: 61px;
@@ -68,6 +134,27 @@
     height: 500px;
   }
 
+  .video__service-button {
+    &--replay {
+      bottom: 56px;
+      left: 35px;
+    }
+
+    &--subtitles {
+      bottom: 55px;
+      right: 112px;
+    }
+
+    &--fullscreen {
+      bottom: 55px;
+      right: 49px;
+    }
+  }
+
+  .video__service-icon {
+    fill: #ffffff;
+  }
+
   .video__item {
     &::before {
       content: none;
@@ -81,6 +168,22 @@
       width: 648px;
       height: 93px;
       background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .video__scale {
+    &::before {
+      content: "";
+      top: -48px;
+      left: 93px;
+      width: 389px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -51px;
+      left: 206px;
     }
   }
 }
@@ -106,6 +209,13 @@
       left: 0;
       width: 800px;
       background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .video__scale {
+    &::before {
+      content: "";
+      width: 540px;
     }
   }
 }
