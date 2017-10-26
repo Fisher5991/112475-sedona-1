@@ -50,7 +50,7 @@ gulp.task("script", function() {
     .pipe(minifyjs())
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"))
-    
+
   gulp.src("js/picturefill.js")
     .pipe(minifyjs())
     .pipe(rename("picturefill.min.js"))
