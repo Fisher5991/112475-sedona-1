@@ -1,9 +1,9 @@
 .field {
   width: 100%;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  height: 58px;
   padding-left: 18px;
-  font: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   background-color: #f2f2f2;
@@ -32,6 +32,12 @@
   &--email {
     padding-right: 68px;
   }
+
+  &--textarea {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -41,7 +47,7 @@
     }
 
     &--email {
-      width: 315px;
+      width: 314px;
     }
   }
 }
