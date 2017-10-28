@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 23px;
+  padding-left: 20px;
   margin: 0 auto;
   width: 320px;
   background-color: #fefefe;
   box-sizing: border-box;
+  box-shadow: 0 11px 14px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-footer__tag {
@@ -46,7 +47,7 @@
   .page-footer {
     flex-direction: row;
     width: @tablet-width;
-    padding: 0;
+    padding: 34px 0;
   }
 
   .page-footer__tag {
@@ -55,6 +56,7 @@
 
   .page-footer__social {
     width: 256px;
+    margin: 0;
     text-align: center;
   }
 
@@ -68,6 +70,7 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: @desktop-width;
+    padding: 35px 0;
   }
 
   .page-footer__tag {
