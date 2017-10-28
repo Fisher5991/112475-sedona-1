@@ -146,7 +146,7 @@
   cursor: pointer;
 }
 
-input[type="radio"] + .feedback__option-label--radio::before {
+.feedback__option-label--radio::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -168,7 +168,7 @@ input[type="radio"]:checked + .feedback__option-label--radio::after {
   border-radius: 50%;
 }
 
-input[type="checkbox"] + .feedback__option-label--box::before {
+.feedback__option-label--box::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -191,10 +191,10 @@ input[type="checkbox"]:checked + .feedback__option-label--box::after {
   background-position: 50% 50%;
 }
 
-input[type="radio"]:hover + .feedback__option-label--radio::before,
-input[type="checkbox"]:hover + .feedback__option-label--box::before,
+.feedback__option-label--radio:hover::before,
 input[type="radio"]:focus + .feedback__option-label--radio::before,
-input[type="checkbox"]:focus + .feedback__option-label--box::before {
+.feedback__option-label--box:hover::before ,
+input[type="checkbox"]:focus + .feedback__option-label--box::before{
   background-color: #e5e5e5;
 }
 
@@ -210,7 +210,10 @@ input[type="checkbox"]:checked:active + .feedback__option-label--box::after {
 
 .feedback__send {
   width: 100%;
-  padding: 47px 20px;
+  padding-top: 47px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -331,6 +334,10 @@ input[type="checkbox"]:checked:active + .feedback__option-label--box::after {
     }
   }
 
+  .feedback__option-label--radio {
+    padding-left: 76px;
+  }
+
   .feedback__item {
     margin-bottom: 13px;
     padding-top: 20px;
@@ -372,7 +379,7 @@ input[type="checkbox"]:checked:active + .feedback__option-label--box::after {
     align-items: center;
     padding-top: 55px;
     padding-right: 60px;
-    padding-bottom: 59px;
+    padding-bottom: 63px;
     padding-left: 60px;
   }
 
@@ -470,10 +477,6 @@ input[type="checkbox"]:checked:active + .feedback__option-label--box::after {
     }
   }
 
-  .feedback__option-label--radio {
-    padding-left: 76px;
-  }
-
   input[type="radio"] + .feedback__option-label--radio {
     left: 4px;
   }
@@ -481,7 +484,7 @@ input[type="checkbox"]:checked:active + .feedback__option-label--box::after {
   .feedback__send {
     padding-top: 55px;
     padding-right: 120px;
-    padding-bottom: 65px;
+    padding-bottom: 67px;
     padding-left: 120px;
   }
 
